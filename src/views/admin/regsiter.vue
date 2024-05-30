@@ -123,7 +123,6 @@ export default {
       user_name: "",
       email_user: "",
       password: "",
-
       phone_number: "",
       message: "", // Thêm message để hiển thị thông báo
       alertClass: "", // Thêm alertClass để hiển thị loại thông báo
@@ -145,8 +144,23 @@ export default {
           this.message = "Đăng ký thành công!";
           this.alertClass = "alert-success";
           console.log("Success:", response);
+        })
+        .catch((error) => {
+          if (error.response) {
+            this.message = `Lỗi: ${error.response.data}`;
+            this.alertClass = "alert-danger";
+            console.log("Error response:", error.response.data);
+          } else if (error.request) {
+            this.message = "Không nhận được phản hồi từ server.";
+            this.alertClass = "alert-warning";
+            console.log("Error request:", error.request);
+          } else {
+            this.message = `Lỗi: ${error.message}`;
+            this.alertClass = "alert-danger";
+            console.log("Error message:", error.message);
+          }
         });
-      if (result.success == true) {
+      if (result.status == 200) {
         this.$router.push({ name: "login" });
       }
     },
