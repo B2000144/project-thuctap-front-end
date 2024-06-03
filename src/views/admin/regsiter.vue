@@ -110,6 +110,7 @@
   </section>
 </template>
 
+
 <script>
 import axios from "axios";
 
@@ -144,6 +145,7 @@ export default {
           this.message = "Đăng ký thành công!";
           this.alertClass = "alert-success";
           console.log("Success:", response);
+          this.$router.push({ name: "login" });
         })
         .catch((error) => {
           if (error.response) {
@@ -160,9 +162,6 @@ export default {
             console.log("Error message:", error.message);
           }
         });
-      if (result.status == 200) {
-        this.$router.push({ name: "login" });
-      }
     },
   },
 };
