@@ -5,6 +5,7 @@
     <router-link to="/admin/register">register</router-link> |
     <router-link to="/admin/login">login</router-link> |
     <router-link to="/admin/adminHome">adminHome</router-link> |
+    <router-link to="/admin/productList">productList</router-link>
   </nav>
   <router-view />
 </template>
