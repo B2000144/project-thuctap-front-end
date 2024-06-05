@@ -1,9 +1,10 @@
 <template>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link> |
-    <router-link to="/admin/register">register</router-link>
-    <router-link to="/admin/login">login</router-link>
+    <router-link to="/">Trang chủ</router-link> |
+    <router-link to="/admin/register">Đăng Ký</router-link> |
+    <router-link to="/admin/login">Đăng Nhập</router-link> |
+    <router-link to="/admin/productList">Danh sách Sản Phẩm</router-link> |
+    <router-link to="/about">Liên Hệ</router-link> |
   </nav>
   <router-view />
 </template>
