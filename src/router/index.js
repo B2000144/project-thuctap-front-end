@@ -14,37 +14,39 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
   },
   {
-    path: "/test",
-    name: "hello",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/test.vue"),
+    path: "/AdminNavMenu",
+    name: "AdminNavMenu",
+    component: () =>import("../components/admin/AdminNavMenu.vue"),
   },
+
+  //Login
   {
-    path: "/admin/register",
-    name: "regsiter",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/admin/regsiter.vue"),
-  },
-  {
-    path: "/admin/login",
+    path: "/login",
     name: "login",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/admin/login.vue"),
+    component: () => import("../components/admin/Login.vue"),
   },
-
+  //Register
   {
-    path: "/admin/adminHome",
-    name: "adminHome",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/admin/adminHome.vue"),
+    path: "/register",
+    name: "register",
+    component: () => import("../components/admin/Register.vue"),
   },
-
+  //Quản lý sản phẩm
   {
-    path: "/admin/productList",
-    name: "productList",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/admin/productList.vue"),
+    path: "/product",
+    name: "product.list",
+    component: () => import("../views/products/ProductList.vue"),
   },
+  {
+    path: "/product/create",
+    name: "product.create",
+    component: () => import("../views/products/ProductForm.vue"),
+  },
+  {
+    path: "/product/edit/:id",
+    name: "product.edit",
+    component: () => import("../views/products/ProductForm.vue"),
+  }
 ];
 
 const router = createRouter({
