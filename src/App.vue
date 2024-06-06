@@ -2,10 +2,13 @@
   <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link> |
-    <router-link to="/admin/register">register</router-link> |
-    <router-link to="/admin/login">login</router-link> |
-    <router-link to="/admin/adminHome">adminHome</router-link> |
-    <router-link to="/admin/productList">productList</router-link>
+    <router-link to="/register">register</router-link> |
+    <router-link to="/login">login</router-link> |
+    <router-link to="/AdminNavMenu">AdminNavMenu</router-link> |
+    <router-link to="/admin/AdminManager">AdminManager</router-link> |
+    <router-link to="/productList">productList</router-link> |
+    <router-link to="/productForm">productForm</router-link> 
+    
   </nav>
   <router-view />
 </template>
