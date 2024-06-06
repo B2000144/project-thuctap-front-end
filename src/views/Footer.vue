@@ -18,16 +18,16 @@
         <div class="row mt-3">
           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i> Thương Mại Điện Tử
+              <i class="fas fa-gem me-3"></i>Tên Công Ty
             </h6>
             <p>Đây là nơi bạn có thể sử dụng các hàng và cột để tổ chức nội dung chân trang của bạn. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
           </div>
           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4">Sản Phẩm</h6>
-            <p><a href="#!" class="text-reset">Điện Thoại</a></p>
-            <p><a href="#!" class="text-reset">Laptop</a></p>
-            <p><a href="#!" class="text-reset">Đồng Hồ</a></p>
-            <p><a href="#!" class="text-reset">Quần Áo</a></p>
+            <p><a href="#!" class="text-reset">Angular</a></p>
+            <p><a href="#!" class="text-reset">React</a></p>
+            <p><a href="#!" class="text-reset">Vue</a></p>
+            <p><a href="#!" class="text-reset">Laravel</a></p>
           </div>
           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
             <h6 class="text-uppercase fw-bold mb-4">Liên Kết Hữu Ích</h6>
@@ -38,7 +38,7 @@
           </div>
           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
             <h6 class="text-uppercase fw-bold mb-4">Liên Hệ</h6>
-            <p><i class="fas fa-home me-3"></i> VietNam, NY 10012, Việt Nam</p>
+            <p><i class="fas fa-home me-3"></i> New York, NY 10012, Mỹ</p>
             <p><i class="fas fa-envelope me-3"></i> info@example.com</p>
             <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
             <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
@@ -46,11 +46,11 @@
         </div>
       </div>
     </section>
-    <div class="text-center p-4" style="background-color: #f5f242;">
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
       © 2021 Bản Quyền:
       <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
     </div>
-</footer>
+  </footer>
 </template>
 
 <script>
