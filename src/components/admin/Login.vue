@@ -54,7 +54,7 @@ export default {
           this.setCookie("access_token", data.accessToken, 1); // Thay 1 bằng số ngày cookie được lưu
           this.setCookie("refresh_token", data.refreshToken, 1); // Thay 1 bằng số ngày cookie được lưu
           // Chuyển hướng đến trang adminhome
-          this.$router.push("adminHome");
+          this.$router.push("AdminNavMenu");
         } else {
           if (response.status === 401) {
             console.error("Không được phép - Sai thông tin đăng nhập");

@@ -32,7 +32,7 @@
         </li>
       </ul>
       <ul class="navbar-nav">
-        <li class="nav-item" v-if="local_user.role">
+        <li class="nav-item" v-if="local_user && local_user.role">
           <router-link to="/login" class="nav-link" @click="handleLogout">
             <i class="fa-solid fa-user"></i> {{ local_user.name }} (Đăng xuất)
           </router-link>
@@ -43,14 +43,22 @@
 </template>
 
 <script>
-import productService from "../../service/product.service";
+// import productService from "../../service/product.service";
 export default {
-  data: {
-    return: {
-      product: [],
-    },
+  data() {
+    return {
+      local_user: {
+        // Define your local_user object here
+        name: "User", // Example name
+        role: "admin" // Example role
+      }
+    };
   },
-  
+  methods: {
+    handleLogout() {
+      // Your logout logic here
+    }
+  }
 };
 </script>
 
