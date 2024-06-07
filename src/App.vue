@@ -5,9 +5,9 @@
     <router-link to="/register">register</router-link> |
     <router-link to="/login">login</router-link> |
     <router-link to="/AdminNavMenu">AdminNavMenu</router-link> |
-    <router-link to="/admin/AdminManager">AdminManager</router-link> |
-    <router-link to="/productList">productList</router-link> |
-    <router-link to="/productForm">productForm</router-link> 
+    <router-link to="/product">product.list</router-link> |
+    <router-link to="/product/create">product.create</router-link> |
+    <router-link to="/product/edit/:id">product.edit</router-link> 
     
   </nav>
   <router-view />

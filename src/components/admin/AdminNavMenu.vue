@@ -43,7 +43,7 @@
 </template>
 
 <script>
-// import productService from "../../service/product.service";
+ import productService from "../../service/product.service";
 export default {
   data() {
     return {

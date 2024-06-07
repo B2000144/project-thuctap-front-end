@@ -16,22 +16,22 @@ const routes = [
   {
     path: "/AdminNavMenu",
     name: "AdminNavMenu",
-    component: () =>import("../components/admin/AdminNavMenu.vue"),
+    component: () => import("../components/admin/AdminNavMenu.vue"),
   },
 
-  //Login
+  // Login
   {
     path: "/login",
     name: "login",
     component: () => import("../components/admin/Login.vue"),
   },
-  //Register
+  // Register
   {
     path: "/register",
     name: "register",
     component: () => import("../components/admin/Register.vue"),
   },
-  //Quản lý sản phẩm
+  // Quản lý sản phẩm
   {
     path: "/product",
     name: "product.list",
@@ -46,7 +46,21 @@ const routes = [
     path: "/product/edit/:id",
     name: "product.edit",
     component: () => import("../views/products/ProductForm.vue"),
-  }
+    props: true, // Cho phép truy cập vào thông tin id qua props
+  },
+
+  //Quản lý tài khoản
+  {
+    path: "/user",
+    name: "user.list",
+    component: () => import("../views/users/UserList.vue"),
+  },
+
+  {
+    path: "/adminpage",
+    name: "admin",
+    component: () => import("../views/AdminManager.vue"),
+  },
 ];
 
 const router = createRouter({
