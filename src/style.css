@@ -1,5 +1,5 @@
 .image img{
-    height: 300px;
+    height: 100px;
     width: 100%;
 }
     .image{
@@ -9,3 +9,4 @@
 .footer{
     background-color: #f5f242;
 }
+margin-top: 10px;
