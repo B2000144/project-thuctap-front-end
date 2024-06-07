@@ -41,7 +41,17 @@
         </div>
       </nav>
     </div>
-    
+
+    <!-- Banner chính -->
+    <header class="bg-danger p-3">
+            <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                    <h1 class="display-4 fw-bolder">Thương Mại Điện Tử</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">Mua hàng nhanh chóng, tiện lợi</p>
+                </div>
+            </div>
+        </header>
+    <!-- Kết thúc -->
 
     <!-- Carousel Section -->
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
@@ -79,6 +89,28 @@
     </div>
     <!-- End Carousel Section -->
   </div>
+
+  <!-- Menu sản phẩm tìm kiếm -->
+  <div class="''">
+      <ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">Sản phẩm </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Điện thoại</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Thời trang</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Các loại bánh</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled" aria-disabled="true">Phụ kiện</a>
+  </li>
+</ul>
+    </div>
+    <!-- Kết thúc tìm kiếm -->
 </template>
 
 <script>
